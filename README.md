@@ -1,29 +1,11 @@
-# zebra-view
-
-## Project setup
-```
-npm install
+## start
+```bash
+npm install zebra-view
 ```
 
-### Compiles and hot-reloads for development
+## usage
 ```
-npm run serve
+import zebraView from 'zebra-view'
+import 'zebra-view/dist/zebra-view.css'
+Vue.use(zebraView)
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
