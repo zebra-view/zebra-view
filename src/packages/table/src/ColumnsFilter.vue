@@ -113,13 +113,13 @@ export default {
   methods: {
     getCheckedKeys(data) {
       if (Array.isArray(data)) {
-        const result = data.reduce((result, { _id, columns = [] }) => {
+        const res = data.reduce((result, { _id, columns = [] }) => {
           const cols = this.getCheckedKeys(columns);
           // 子节点全选中的时候设置当前节点选中
           if (columns.length === 0 || columns.every((item) => cols.includes(item._id))) result.push(_id);
           return [...result, ...cols];
         }, []);
-        return result;
+        return res;
       }
       return [];
     },
